@@ -1,0 +1,19 @@
+{
+  "presets": [
+    "@babel/env",
+    "@babel/react",
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+
+    ["module-resolver", {
+      "root": ["./"],
+      "alias": {
+        "constants": "./src/constants",
+        "api": "./src/renderer/api",
+        "r_components": "./src/renderer/components",
+        "r_reducer": "./src/renderer/reducer",
+      }
+    }]
+  ]
+}

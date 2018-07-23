@@ -1,0 +1,48 @@
+.schema-sel-cont {
+  margin-bottom: 20px;
+  width: 275px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .schema-input, {
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    border-bottom: 1px solid $color--green;
+    margin-right: 10px;
+    display: block;
+    font-size: 14px;
+    padding: 2px 5px;
+    margin-bottom: 10px;
+    width: 96%;
+  }
+
+  .Select-control, &.is-focused .Select-control,
+  .Select.is-focused:not(.is-open) > .Select-control,
+  .Select.is-open > .Select-control,
+  .Select-control input,
+   {
+    background: transparent;
+    border-radius: 0px;
+    border: none;
+    color: white;
+    outline: none;
+    border-bottom: 1px solid $color--green;
+    box-shadow: none;
+  }
+
+  .Select-clear-zone,
+  .Select.has-value.Select--single > .Select-control .Select-value .Select-value-label, .Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
+    color: white ;
+  }
+
+  .Select-placeholder {
+    color: rgba(255,255,255,0.6);
+  }
+
+  .Select.is-open .Select-arrow, .Select .Select-arrow-zone:hover > .Select-arrow,
+  .Select-arrow {
+    border-color: white transparent transparent;
+  }
+}
